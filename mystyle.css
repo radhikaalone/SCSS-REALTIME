@@ -1,0 +1,45 @@
+p {
+  color: red;
+  font-size: 15px;
+}
+
+.main-section {
+  background-color: #235ca8;
+  color: black;
+  height: 400px;
+  width: 33.33333%;
+}
+
+h1 {
+  color: black;
+  font: 20px Helvetica, sans-serif;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: red;
+  padding: 5px 15px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.danger {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid blue;
+  background-color: #fafafa;
+}
+/*# sourceMappingURL=mystyle.css.map */

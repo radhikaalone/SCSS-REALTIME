@@ -1,0 +1,51 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #ccc;
+$secondary-color:red;
+$fontSize: 15px;
+$bgcolor:#235ca8;
+
+p{
+    color:$secondary-color;
+    font-size: $fontSize;
+
+}
+.main-section{
+    background-color: $bgcolor;
+    $primary-color:black !global;
+    color:$primary-color;
+    height:600px-200;
+    width:320/960 *100%;
+}
+h1{
+    color:$primary-color;
+    font: $fontSize+5 $font-stack;
+}
+nav{
+    ul{
+        margin:0;
+        padding:0;
+        list-style:none;
+
+    }
+    li{
+        display:inline-block;
+    }
+    a{
+      text-decoration: none;
+      color:$secondary-color;
+      padding:5px 15px;
+    }
+    a:hover{
+        color:$primary-color;
+    }
+}
+@mixin normal-text{
+    color:red;
+    font-size:15px;
+    font-weight: bold;
+    border:1px solid blue;
+}
+.danger{
+    @include normal-text;
+    background-color: #fafafa;
+}
