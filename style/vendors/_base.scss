@@ -1,0 +1,82 @@
+body{
+    background:$white;
+    line-height: 1.6;
+    overflow-x: hidden;
+    @include fontstru(.875rem, $ff-s, $gray);
+}
+%flex-center{
+    display:flex;
+    align-items: center;
+}
+%flex{
+    display: flex;
+}
+
+/*---------------Welcome section-----------------------*/
+.welcome{
+    background-image: url("../images/header-bg.png");
+    background-position: center center;
+    background-size: cover;
+    height:100vh;
+    @extend %flex-center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1{
+        @include fontstru (3vw, $ff-s, $greyText); 
+        margin:0;
+        font-weight: $fwn;       
+        }
+    h2{
+        @include fontstru (10vw, $ff-ss, $blueText);
+        font-weight: $fwn;  
+        letter-spacing: .15em; 
+        line-height:1;
+        margin:0;
+    }
+    &::before,
+    &::after{
+            background-color: $greyText;
+            height:1px;
+            content:"";
+            display:block;
+            width:15%;
+    }
+    &::before {
+        margin: 0 auto 5em;      
+      }
+  
+      &::after {
+        margin: 5em auto 0;      
+      }
+}
+/*---------------Welcome section-----------------------*/
+/*---------------intro section-----------------------*/
+.intro{
+    @extend %flex;
+   flex-direction: row;
+    color: rgba($white, .7);
+
+    &__left img,
+    &__right img{
+        object-fit: cover;
+        width:100%;
+        height:100%;
+        display: block;
+
+    }
+    &__middle{
+        background-color: $greyText;
+       h3{
+            @include fontstru(3rem, $ff-ss, $white);
+            font-weight: 400;
+            letter-spacing: .15em;
+            text-align: center;
+        }
+
+    }
+    
+
+}
+
+/*---------------intro section-----------------------*/

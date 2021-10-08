@@ -1,0 +1,17 @@
+@mixin fontstru($fz,$fm,$color){
+    font-size:$fz;
+    font-family:$fm;
+    color:$color;
+}
+@mixin default-button{
+    border:none;
+    border-radius: 9px;
+    padding:6px 20px;
+    text-align: center;
+    font-size:1.1rem;
+}
+@mixin tablet{
+    @media screen and (max-width:992px) {
+        @content
+    }
+}

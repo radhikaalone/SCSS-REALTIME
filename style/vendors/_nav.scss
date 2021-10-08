@@ -1,0 +1,71 @@
+header{
+   
+    background:$gray;
+}
+.navbar{
+   
+    max-width:80%;
+    margin:0 auto;
+    min-height:80px;
+    @extend %flex-center;
+    justify-content: space-between;
+
+    &__menubar{
+        @include tablet{
+            display:none;
+        }
+    }
+
+    &__logo { 
+        @extend %flex-center;
+
+    a{
+       
+        font-weight:$fwb;
+        letter-spacing: 2px;
+        @include fontstru(3rem, $ff-ss, $black)
+        }
+        
+    }
+    &__menubar{
+        ul{
+            @extend %flex-center;
+            justify-content: center;
+            flex-direction: row;
+
+            li{ 
+
+                a{
+                    padding: 10px 20px;
+                    @include fontstru(1.2rem, $ff-s, $greyText)
+                }
+                button{
+                    @include default-button;
+                    background-color: $blueText;
+                    color:$black;
+                    font-family: $ff-s;
+
+                    &:hover{
+                        background: $greyText;
+                        -webkit-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+                        color:$white;
+                    }
+                }
+               
+            }
+
+        }
+
+
+    }
+    .fa{
+        font-size:30px;
+        color:$black;
+        display:none;
+        @include tablet{
+            display: block;
+        }
+    }
+    
+}
