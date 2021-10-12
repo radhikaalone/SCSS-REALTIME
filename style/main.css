@@ -24,6 +24,16 @@ html {
    */
 body {
   margin: 0;
+  background: #FFFFFF;
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-size: 0.875rem;
+  font-family: "Merriweather, serif";
+  color: #A7A7A7;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
 }
 
 /**
@@ -383,15 +393,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  background: #FFFFFF;
-  line-height: 1.6;
-  overflow-x: hidden;
-  font-size: 0.875rem;
-  font-family: "Merriweather, serif";
-  color: #A7A7A7;
-}
-
 .welcome, .navbar, .navbar__logo, .navbar__menubar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,6 +447,7 @@ body {
   content: "";
   display: block;
   width: 15%;
+  margin: 0;
 }
 
 .welcome::before {
@@ -477,6 +479,9 @@ body {
 
 .intro__middle {
   background-color: #223843;
+  padding: 0 4rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .intro__middle h3 {
@@ -486,6 +491,25 @@ body {
   font-weight: 400;
   letter-spacing: .15em;
   text-align: center;
+}
+
+.intro__middle h3::after {
+  background-color: #FFFFFF;
+  height: 1px;
+  content: "";
+  display: block;
+  width: 25%;
+  margin: 0.7em auto 0;
+}
+
+.intro__middle p {
+  font-size: 1.45rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.intro__middle, .intro__left, .intro__right {
+  width: 33.4%;
 }
 
 /*---------------intro section-----------------------*/

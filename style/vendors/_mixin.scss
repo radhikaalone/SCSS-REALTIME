@@ -10,6 +10,15 @@
     text-align: center;
     font-size:1.1rem;
 }
+@mixin custom-border($bgc, $width, $margin){
+    background-color: $bgc;
+    height:1px;
+    content:"";
+    display:block;
+    width:$width;
+    margin: $margin;
+
+}
 @mixin tablet{
     @media screen and (max-width:992px) {
         @content

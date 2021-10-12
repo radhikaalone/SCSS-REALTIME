@@ -1,15 +1,12 @@
-body{
-    background:$white;
-    line-height: 1.6;
-    overflow-x: hidden;
-    @include fontstru(.875rem, $ff-s, $gray);
-}
 %flex-center{
     display:flex;
     align-items: center;
 }
 %flex{
     display: flex;
+}
+%font-style{
+    text-align:center;
 }
 
 /*---------------Welcome section-----------------------*/
@@ -36,11 +33,7 @@ body{
     }
     &::before,
     &::after{
-            background-color: $greyText;
-            height:1px;
-            content:"";
-            display:block;
-            width:15%;
+        @include custom-border($greyText, 15%,  0 )
     }
     &::before {
         margin: 0 auto 5em;      
@@ -67,13 +60,29 @@ body{
     }
     &__middle{
         background-color: $greyText;
+        padding: 0 4rem;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
        h3{
             @include fontstru(3rem, $ff-ss, $white);
             font-weight: 400;
             letter-spacing: .15em;
             text-align: center;
+
+            &::after{
+                @include custom-border($white, 25%, .7em auto 0)
+            }
+        }
+        p{
+            font-size: 1.45rem;
+            text-align: center;
+            line-height: 1.2;
         }
 
+    }
+    &__middle, &__left, &__right{
+        width:33.4%;
     }
     
 
