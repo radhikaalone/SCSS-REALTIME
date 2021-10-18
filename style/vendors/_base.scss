@@ -89,3 +89,48 @@
 }
 
 /*---------------intro section-----------------------*/
+/*---------------------about me start-----------------------*/
+.aboutme{
+    @extend %flex;
+    flex-direction: row;
+    margin:5em auto;
+    width:60%;
+    
+    &__left{
+        width:25%;
+        position: relative;
+
+    }
+    &__right{
+
+        width:75%;
+        position: relative;
+
+        h2{
+            @include fontstru(4.25rem, default, $blueText);
+            margin-top:0;
+            position: absolute;
+            left:-109px;
+            line-height:1;
+
+        }
+        &-bar{
+            width:100%;
+            position: relative;
+            height:85px;
+
+        }
+        &-subcontent h4{
+            @include fontstru(3rem, $ff-ss, $dark-gray);
+            letter-spacing:0.15em;
+            font-weight:400;
+            margin-bottom:10px;
+
+        }
+        &-subcontent{
+            margin-left: 20px;
+            font-size: 1.125rem;
+        }
+    }
+}
+/* -------------------------about me end-----------------------*/

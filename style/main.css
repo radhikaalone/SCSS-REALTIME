@@ -28,7 +28,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   font-size: 0.875rem;
-  font-family: "Merriweather, serif";
+  font-family: "Merriweather";
   color: #A7A7A7;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -164,6 +164,7 @@ audio:not([controls]) {
    */
 img {
   border-style: none;
+  max-width: 100%;
 }
 
 /**
@@ -402,7 +403,7 @@ a {
           align-items: center;
 }
 
-.intro {
+.intro, .aboutme {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,7 +426,7 @@ a {
 
 .welcome h1 {
   font-size: 3vw;
-  font-family: "Merriweather, serif";
+  font-family: "Merriweather";
   color: #223843;
   margin: 0;
   font-weight: 400;
@@ -513,6 +514,57 @@ a {
 }
 
 /*---------------intro section-----------------------*/
+/*---------------------about me start-----------------------*/
+.aboutme {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5em auto;
+  width: 60%;
+}
+
+.aboutme__left {
+  width: 25%;
+  position: relative;
+}
+
+.aboutme__right {
+  width: 75%;
+  position: relative;
+}
+
+.aboutme__right h2 {
+  font-size: 4.25rem;
+  font-family: default;
+  color: #03AFC2;
+  margin-top: 0;
+  position: absolute;
+  left: -109px;
+  line-height: 1;
+}
+
+.aboutme__right-bar {
+  width: 100%;
+  position: relative;
+  height: 85px;
+}
+
+.aboutme__right-subcontent h4 {
+  font-size: 3rem;
+  font-family: "Six Caps", sans-serif;
+  color: #606060;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.aboutme__right-subcontent {
+  margin-left: 20px;
+  font-size: 1.125rem;
+}
+
+/* -------------------------about me end-----------------------*/
 header {
   background: #A7A7A7;
 }
@@ -553,7 +605,7 @@ header {
 .navbar__menubar ul li a {
   padding: 10px 20px;
   font-size: 1.2rem;
-  font-family: "Merriweather, serif";
+  font-family: "Merriweather";
   color: #223843;
 }
 
@@ -565,7 +617,7 @@ header {
   font-size: 1.1rem;
   background-color: #03AFC2;
   color: #000;
-  font-family: "Merriweather, serif";
+  font-family: "Merriweather";
 }
 
 .navbar__menubar ul li button:hover {
